@@ -8,40 +8,73 @@
     <title>Survey Form</title>
 </head>
 <body>
-    <h1 id="title">Survey Form Title</h1>
-    <p id="description">A description of the survey form.</p>
-    <form id="survey-form">
-        <label id="name-label" for="name">Name:</label>
-        <input id="name" type="text" name="name" placeholder="Name" required>
-        <label id="email-label" for="email">Email:</label>
-        <input id="email" type="email" name="email" placeholder="Email" required>
-        <label id="number-label" for="number">Number:</label>
-        <input id="number" type="number" name="number" placeholder="Number" min="0" max="120" required>
-        <label id="dropdown-label" for="dropdown">Dropdown:</label>
-        <select id="dropdown" name="dropdown" required>
-            <option value="">Choose an option</option>
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
-            <option value="option4">Option 4</option>
-            <option value="option5">Option 5</option>
-        </select>
-        <label>Radio:</label>
-        <input id="radio1" type="radio" name="radio" value="option1" checked>
-        <label id="radio1-label" for="radio1">Option 1</label>
-        <input id="radio2" type="radio" name="radio" value="option2">
-        <label id="radio2-label" for="radio2">Option 2</label>
-        <input id="radio3" type="radio" name="radio" value="option3">
-        <label id="radio3-label" for="radio3">Option 3</label>
-        <label>Checkboxes:</label>
-        <input id="checkbox1" type="checkbox" name="checkbox" value="option1">
-        <label id="checkbox1-label" for="checkbox1">Option 1</label>
-        <input id="checkbox2" type="checkbox" name="checkbox" value="option2">
-        <label id="checkbox2-label" for="checkbox2">Option 2</label>
-        <label for="textarea">Textarea:</label>
-        <textarea id="textarea" name="textarea" cols="30" rows="10"></textarea>
-        <input id="submit" type="submit">
-    </form>
+    <h1 id="title">Aussie Servo Iced Treats Survey</h1>
+    <p id="description">A survey on your favourite iced treats from your local service station</p>
+    <div class="form-container">
+        <form id="survey-form">
+            <label id="name-label" for="name">Name</label><br>
+            <input id="name" type="text" name="name" placeholder="Name" required><br><br>
+    
+            <label id="email-label" for="email">Email</label><br>
+            <input id="email" type="email" name="email" placeholder="Email" required><br><br>
+    
+            <label id="number-label" for="number">Age<small>(Optional)</small></label><br>
+            <input id="number" type="number" name="number" placeholder="Age" min="0" max="120"><br><br>
+    
+            <label for="dropdown">Which option best describes your enthusiasm for iced treats?</label><br>
+            <select id="dropdown" name="dropdown" required>
+                <option selected disabled>Choose an option</option>
+                <option value="option1">Stop talking to me</option>
+                <option value="option2">A little annoyed actually</option>
+                <option value="option3">Not enthused really</option>
+                <option value="option4">Your average iced treats enthusiast</option>
+                <option value="option5">Iced treat fanatic</option>
+            </select><br><br>
+    
+            <label>What is your Iced Treats Frequency (ITF)?</label><br>
+            <input id="radio1" type="radio" name="radio" value="option1" checked>
+            <label for="radio1">Every hour</label><br>
+            <input id="radio2" type="radio" name="radio" value="option2">
+            <label for="radio2">Every day</label><br>
+            <input id="radio3" type="radio" name="radio" value="option3">
+            <label for="radio3">Couple times a week</label><br>
+            <input id="radio4" type="radio" name="radio" value="option4">
+            <label for="radio4">Every couple of weeks</label><br>
+            <input id="radio5" type="radio" name="radio" value="option5">
+            <label for="radio5">Once a year</label><br><br>
+    
+            <label>What are your favourite iced treats? <small>(select all that apply)</small></label><br>
+            <input id="checkbox1" type="checkbox" name="checkbox" value="option1">
+            <label for="checkbox1">Paddle Pop</label><br>
+            <input id="checkbox2" type="checkbox" name="checkbox" value="option2">
+            <label for="checkbox2">Magnum</label><br>
+            <input id="checkbox3" type="checkbox" name="checkbox" value="option3">
+            <label for="checkbox3">Connoisseur</label><br>
+            <input id="checkbox4" type="checkbox" name="checkbox" value="option4">
+            <label for="checkbox4">Cornetto</label><br>
+            <input id="checkbox5" type="checkbox" name="checkbox" value="option5">
+            <label for="checkbox5">Weis Bar</label><br>
+            <input id="checkbox6" type="checkbox" name="checkbox" value="option6">
+            <label for="checkbox6">Bubble O' Bill</label><br>
+            <input id="checkbox7" type="checkbox" name="checkbox" value="option7">
+            <label for="checkbox7">Calipo</label><br>
+            <input id="checkbox8" type="checkbox" name="checkbox" value="option8">
+            <label for="checkbox8">Icey Pole</label><br>
+            <input id="checkbox9" type="checkbox" name="checkbox" value="option9">
+            <label for="checkbox9">Milo Cup</label><br>
+            <input id="checkbox10" type="checkbox" name="checkbox" value="option10">
+            <label for="checkbox10">Golden Gaytime</label><br>
+            <input id="checkbox11" type="checkbox" name="checkbox" value="option11">
+            <label for="checkbox11">Maxibon</label><br><br>
+    
+            <label for="textarea">Any additional thoughts or comments?</label><br>
+            <div class="textarea-container">
+                <textarea id="textarea" name="textarea" placeholder="type here..."></textarea>
+            </div>
+    
+            <input id="submit" type="submit">
+        </form>
+    </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
