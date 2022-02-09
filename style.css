@@ -123,7 +123,7 @@ textarea {
     font-family: inherit;
     font-size: 1.75rem;
     color: #fff;
-    transition: transform 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 .custom-submit:hover {
