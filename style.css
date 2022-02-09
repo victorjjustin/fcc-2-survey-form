@@ -15,16 +15,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: linear-gradient(90deg, rgba(238,63,134,0.3) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 60%, rgba(49,211,247,0.3) 100%);
+    margin: 0;
 }
 
-form { 
-    border: 1px solid #ccc;
-    box-shadow: 6px 12px 16px #ccc;
+form {
+    border: 1px solid #000;
+    box-shadow: 6px 12px 16px #aaa;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
     margin: 30px;
-    width: 700px;
+    width: 820px;
     max-width: 80vw;
+    background-color: #fff;
 }
 
 h1 {
@@ -38,18 +41,25 @@ p {
 }
 
 label {
+    cursor: pointer;
     display: block;
     margin: 10px 0px;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 .label-heading {
-    font-size: 1.5rem;
-    margin: 20px 0px;
+    cursor: initial;
+    font-size: 1.75rem;
+    margin: 0;
+    margin-top: 50px;
+}
+
+#name-label {
+    margin: 0;
 }
 
 .info {
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 input {
@@ -57,16 +67,69 @@ input {
     margin-right: 10px;
 }
 
-select {
+.textbox {
+    border: none;
+    border-bottom: 2px solid #555;
+    width: 100%;
+    min-height: 50px;
+    font-family: inherit;
+    font-size: 1.5rem;
+}
+
+.textbox:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #ccc;
+    font-size: 1.25rem;
+}
+
+.custom-select {
     cursor: pointer;
+    border: none;
+    border-bottom: 2px solid #555;
+    width: 100%;
+    min-height: 50px;
+    font-family: inherit;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.custom-select:focus {
+    outline: none;
 }
 
 textarea {
+    font-family: inherit;
+    font-size: 1.5rem;
     width: 100%;
     resize: none;
     outline: none;
-    border: 1px solid #ccc;
+    border: none;
+    border-top: 2px solid #333;
     min-height: 100px;
     margin: 10px 0px;
-    border-radius: 5px;
 }
+
+.custom-submit {
+    background-color: var(--color-pink);
+    width: 100%;
+    min-height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 1.75rem;
+    color: #fff;
+    transition: transform 0.1s ease-in-out;
+}
+
+.custom-submit:hover {
+    transform: scale(1.025);
+}
+
+.custom-submit:active {
+    background-color: var(--color-blue);
+}
+

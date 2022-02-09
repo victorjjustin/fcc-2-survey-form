@@ -15,17 +15,17 @@
     <main>
         <form id="survey-form">
             <label id="name-label" class="label-heading" for="name">Name</label>
-            <input id="name" type="text" name="name" placeholder="Name" required>
+            <input id="name" class="textbox" type="text" name="name" placeholder="Jane Smith" required>
     
             <label id="email-label" class="label-heading" for="email">Email</label>
-            <input id="email" type="email" name="email" placeholder="Email" required>
+            <input id="email" class="textbox" type="email" name="email" placeholder="jane@smith.com" required>
     
             <label id="number-label" class="label-heading" for="number">Age <span class="info">(Optional)</span></label>
-            <input id="number" type="number" name="age" placeholder="Age" min="0" max="120">
+            <input id="number" class="textbox" type="number" name="age" placeholder="27" min="0" max="120">
     
             <label for="dropdown" class="label-heading">Which option best describes your enthusiasm for iced treats?</label>
-            <select id="dropdown" name="dropdown" required>
-                <option selected disabled>Choose an option</option>
+            <select id="dropdown" class="custom-select" name="dropdown" required>
+                <option disabled selected hidden>(Choose an option)</option>
                 <option value="zero-enthusiasm">Stop talking to me</option>
                 <option value="secret-enthusiasm">A little annoyed actually</option>
                 <option value="little-enthusiasm">Not enthused really</option>
@@ -56,7 +56,7 @@
             <label class="label-heading">Any additional thoughts or comments?</label>
             <textarea id="textarea" name="textarea" placeholder="type here..."></textarea>
 
-            <input id="submit" type="submit">
+            <input id="submit" class="custom-submit" type="submit">
         </form>
     </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
